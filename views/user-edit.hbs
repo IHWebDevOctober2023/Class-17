@@ -1,0 +1,17 @@
+<h1>Edit your user</h1>
+
+<form action="/user-edit" method="post"  enctype="multipart/form-data">
+
+    <label for="username">Username</label>
+    <textarea type="text" name="username">{{user.username}}</textarea>
+
+    <label for="email">Email</label>
+    <textarea type="text" name="email" >{{user.email}} </textarea>    
+
+    <input type="file" name="profile-image"  >
+
+    <button type="submit">
+        Edit
+    </button>
+
+</form>
